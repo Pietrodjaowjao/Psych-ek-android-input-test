@@ -79,6 +79,22 @@ class Hitbox extends FlxSpriteGroup
                 hitbox.add(add(K8 = createhitbox(sizex * 7, "K8")));
                 hitbox.add(add(K9 = createhitbox(sizex * 8, "K9")));
             }
+            case OITO:
+            {
+                hitbox_hint.loadGraphic('assets/shared/images/hitbox/hitboxgod_hint.png');
+
+                frameshb = FlxAtlasFrames.fromSparrow('assets/shared/images/hitbox/hitboxgod.png', 'assets/shared/images/hitbox/hitboxgod.xml');
+                sizex = 142;
+                
+                hitbox.add(add(K1 = createhitbox(0, "K1"))); 
+                hitbox.add(add(K2 = createhitbox(sizex, "K2")));
+                hitbox.add(add(K3 = createhitbox(sizex * 2, "K3"))); 
+                hitbox.add(add(K4 = createhitbox(sizex * 3, "K4")));
+                hitbox.add(add(K6 = createhitbox(sizex * 5, "K6")));
+                hitbox.add(add(K7 = createhitbox(sizex * 6, "K7")));
+                hitbox.add(add(K8 = createhitbox(sizex * 7, "K8")));
+                hitbox.add(add(K9 = createhitbox(sizex * 8, "K9")));
+            }
             case SEVEN:
             {
                 hitbox_hint.loadGraphic('assets/shared/images/hitbox/hitboxseven_hint.png');
@@ -176,6 +192,7 @@ enum HitboxType {
     SIX;
     SEVEN;
     NINE;
+    OITO;
 }
 
 /*if (widghtScreen == null)

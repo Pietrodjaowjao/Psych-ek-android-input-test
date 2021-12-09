@@ -848,6 +848,8 @@ class PlayState extends MusicBeatState
 				curcontrol = SEVEN;
 			case 3:
 				curcontrol = NINE;
+			case 4:
+				curcontrol = OITO;
 			default:
 				curcontrol = DEFAULT;
 		}
